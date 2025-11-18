@@ -1,0 +1,27 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Build outputs
+SymmetryPlaneTools-build/
+build/
+dist/
+*.egg-info/
+*.whl
+*.zip
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+Testing/Temporary/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

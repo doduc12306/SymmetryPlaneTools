@@ -163,6 +163,99 @@
      </layout>
     </widget>
    </item>
+  <item>
+   <widget class="ctkCollapsibleButton" name="sheetCollapsibleButton">
+    <property name="text">
+     <string>Cutting Sheet</string>
+    </property>
+    <property name="collapsed">
+     <bool>true</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_sheet">
+     <item>
+      <layout class="QFormLayout" name="formLayoutSheet">
+       <item row="0" column="0">
+        <widget class="QLabel" name="curveNameLabel">
+         <property name="text"><string>Curve name:</string></property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="curveNameLineEdit">
+         <property name="placeholderText"><string>MOL</string></property>
+         <property name="toolTip"><string>Name of Markups Curve node (default MOL)</string></property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="yawLabel">
+         <property name="text"><string>Yaw (deg):</string></property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="yawSpinBox">
+         <property name="minimum"><double>-90.0</double></property>
+         <property name="maximum"><double>90.0</double></property>
+         <property name="value"><double>45.0</double></property>
+         <property name="singleStep"><double>1.0</double></property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="latLabel">
+         <property name="text"><string>Lateral out (mm):</string></property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDoubleSpinBox" name="latSpinBox">
+         <property name="minimum"><double>0.0</double></property>
+         <property name="maximum"><double>50.0</double></property>
+         <property name="value"><double>5.0</double></property>
+         <property name="singleStep"><double>0.5</double></property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="medLabel">
+         <property name="text"><string>Medial in (mm):</string></property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="medSpinBox">
+         <property name="minimum"><double>0.0</double></property>
+         <property name="maximum"><double>80.0</double></property>
+         <property name="value"><double>15.0</double></property>
+         <property name="singleStep"><double>0.5</double></property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="extendLabel">
+         <property name="text"><string>Extend ends (mm):</string></property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDoubleSpinBox" name="extendSpinBox">
+         <property name="minimum"><double>0.0</double></property>
+         <property name="maximum"><double>40.0</double></property>
+         <property name="value"><double>10.0</double></property>
+         <property name="singleStep"><double>1.0</double></property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="createSheetButton">
+       <property name="text"><string>Create Cutting Sheet</string></property>
+       <property name="toolTip"><string>Build sheet from curve and mirror across MSP</string></property>
+      </widget>
+     </item>
+  <item>
+   <widget class="QLabel" name="sheetStatusLabel">
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:8pt; font-style:italic;&quot;&gt;Requires an MSP plane and a Markups Curve (e.g. MOL).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="wordWrap"><bool>true</bool></property>
+   </widget>
+  </item>
+    </layout>
+   </widget>
+  </item>
    <item>
     <spacer name="verticalSpacer">
      <property name="orientation">

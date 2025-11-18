@@ -34,7 +34,7 @@ iconurl https://raw.githubusercontent.com/Slicer/Slicer/main/Applications/Slicer
 status beta
 
 # One line stating what the module does
-description Tools for creating symmetry planes from 3 or 4 fiducial points using PCA/SVD for best-fit plane calculation
+description Symmetry planes, gonion refinement, curved cutting sheet, mandible split, surgical guides, and STL export for 3D Slicer (modular ScriptedLoadableModule)
 
 # Space separated list of urls
 screenshoturls
