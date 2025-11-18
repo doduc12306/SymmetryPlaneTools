@@ -1,5 +1,8 @@
-cmake_minimum_required(VERSION 3.16.3...3.19.7 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.13.4)
 project(SymmetryPlaneTools)
+
+# Standard Slicer extension metadata expected by Extension Wizard
+set(EXTENSION_NAME "SymmetryPlaneTools")
 set(EXTENSION_HOMEPAGE "https://github.com/doduc12306/SymmetryPlaneTools")
 set(EXTENSION_CATEGORY "Utilities")
 set(EXTENSION_CONTRIBUTORS "Do Nguyen Anh Duc")
@@ -7,6 +10,7 @@ set(EXTENSION_DESCRIPTION "Modular tools for symmetry planes, gonion landmark re
 set(EXTENSION_ICONURL "https://raw.githubusercontent.com/Slicer/Slicer/main/Applications/SlicerApp/Resources/Icons/Slicer.svg")
 set(EXTENSION_SCREENSHOTURLS "")
 set(EXTENSION_DEPENDS "NA")
+set(EXTENSION_BUILD_SUBDIRECTORY ".")
 find_package(Slicer REQUIRED)
 include(${Slicer_USE_FILE})
 add_subdirectory(SymmetryPlaneFromPoints)
