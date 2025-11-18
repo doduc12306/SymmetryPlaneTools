@@ -254,10 +254,16 @@ class SymmetryPlaneFromPointsLogic(ScriptedLoadableModuleLogic):
         count = len(points)
         if count == 3:
             a, b, c = (np.array(pt, dtype=float) for pt in points)
-            return self.planeLogic.create_from_3_points(a, b, c, name='SymmetryPlane')
+            node = self.planeLogic.create_from_3_points(a, b, c, name='SymmetryPlane')
+            if node:
+                node.SetName('SymmetryPlane')  # enforce exact name for tests
+            return node
         if count == 4:
             arr = [np.array(pt, dtype=float) for pt in points]
-            return self.planeLogic.create_best_fit(arr, name='SymmetryPlane')
+            node = self.planeLogic.create_best_fit(arr, name='SymmetryPlane')
+            if node:
+                node.SetName('SymmetryPlane')
+            return node
         raise ValueError('Need 3 or 4 points')
     
     def findPointByLabel(self, label):

@@ -14,9 +14,3 @@ Create a symmetry plane (Markups Plane) from 3–4 fiducial points in 3D Slicer,
 
 Cutting sheets (optional):
 - Provide a Markups Curve name (default `MOL`) and parameters, then Create Cutting Sheet to generate left/right sheets mirrored across MSP.
-
-## Development workflow
-Reload the module after code changes in Python Interactor:
-```python
-exec(open(r"<repo>/SymmetryPlaneTools/reload.py").read())
-```
